@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Change Styles</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <style type="text/css">
+    html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+        }
+        
+        body {
+            font: 100% 'Montserrat', sans-serif;
+        }
+        
+        h1 {
+            font: 4em 'Playfair Display', serif;
+        }
+        
+        aside,
+        article {
+            width: 50%;
+            float: left;
+            padding: 3em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>What Can JavaScript Do?</h1>
+        <p>JavaScript can change the style of an HTML element.</p>
+        <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+                <button type="button" onclick="document.getElementById('demo').style.color='#ffe75a'">Colour</button>
+        <button type="button" onclick="document.getElementById('demo').style.fontWeight='bold'">Weight</button>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='2em'">Size</button>
+        <button type="button" onclick="document.getElementById('demo').style.lineHeight='2em'">Line Height</button>
+        <button type="button" onclick="document.getElementById('demo').style.background='orange'">background</button>
+    </aside>
+    <article>
+        <h1 id="demo">JavaScript can change the style of an HTML element.</h1></article>
+</body>
+
+</html>

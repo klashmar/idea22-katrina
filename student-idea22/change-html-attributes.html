@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Change HTML Attributes</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <style type="text/css">
+    html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+        }
+        
+        body {
+            font: 100% 'Montserrat', sans-serif;
+        }
+        
+        h1 {
+            font: 4em 'Playfair Display', serif;
+        }
+        
+        aside,
+        article {
+            width: 50%;
+            float: left;
+            padding: 3em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>Website in Progress</h1>
+        <p>Currently working on coding my portfolio site. Stop by later to see the final site.</p>
+        <p>You can help me with the workload by finishing this illustration for me :P</p>
+                <button onclick="document.getElementById('myImage').src='agoraphobia-illustration.JPG'">Illustrate it!</button>
+        <button onclick="document.getElementById('myImage').src='agoraphobia-sketch.jpg'">Sketch it!</button>
+    </aside>
+   <article><img id="myImage" src="agoraphobia-sketch.jpg" width="380" height="472" alt=""></article>
+</body>
+</html>

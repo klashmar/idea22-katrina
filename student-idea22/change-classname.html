@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Change Classname</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <style type="text/css">
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+        }
+
+        body {
+            font: 100% 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font: 3em 'Playfair Display', serif;
+        }
+
+        h2 {
+            font: 2em 'Playfair Display', serif;
+        }
+
+        aside,
+        article {
+            width: 50%;
+            float: left;
+            padding: 2em;
+            min-height: 100%;
+        }
+
+        article {
+            background: #eee;
+            text-align: center;
+        }
+
+        .backgroundpink {
+            background: pink;
+        }
+        }
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").className = "backgroundpink";
+        }
+    </script>
+</head>
+
+<body>
+    <aside>
+        <h1>What Can JavaScript Do?</h1>
+        <p>Click the button to set a class for div.</p>
+        <button onclick="myFunction()">Pink it up!</button>
+    </aside>
+    <article id="demo">
+        <h1>Ice cream cones!</h1>
+        <p><img src="ice-cream-cone.png" width="250" height="400" alt=""></p>
+    </article>
+</body></html>

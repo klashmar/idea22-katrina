@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Hide/Show Methods with jQuery</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <style type="text/css">
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+        }
+
+        body {
+            font: 100% 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font: 3em 'Playfair Display', serif;
+        }
+
+        h2 {
+            font: 2em 'Playfair Display', serif;
+        }
+
+        aside,
+        article {
+            width: 50%;
+            float: left;
+            padding: 2em;
+            min-height: 100%;
+        }
+
+        article {
+            background: #eee;
+            text-align: center;
+        }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("#demo").hide();
+            });
+            $("#show").click(function() {
+                $("#demo").show();
+            });
+            $("#toggle").click(function() {
+                $("#demo").toggle();
+            });
+            $("#fadetoggle").click(function() {
+                $("#demo").fadeToggle(750);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <aside>
+        <h1>What Can JavaScript Do?</h1>
+        <p>With jQuery, you can hide and show HTML elements with the hide() and show() methods. JavaScript methods are the actions that can be performed on objects. In JavaScript, almost "everything" is an object. If you understand objects, you understand JavaScript.</p>
+        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+        <p>The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.</p>
+        <p>See: <a href="http://api.jquery.com/category/effects/basics/">jQuery Basic Effects</a>
+            <br>See: <a href="http://api.jquery.com/toggle/">http://api.jquery.com/toggle/</a>
+            <br>See: <a href="http://api.jquery.com/fadetoggle/">http://api.jquery.com/fadetoggle/</a>
+            <br>See: <a href="http://api.jquery.com/slidetoggle/">http://api.jquery.com/slidetoggle/</a></p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+        <button id="fadetoggle">Fade</button>
+    </aside>
+    <article id="demo">
+        <h1>Ice cream cones!</h1>
+        <p><img src="ice-cream-cone.png" width="250" height="400" alt=""></p>
+    </article>
+</body></html>

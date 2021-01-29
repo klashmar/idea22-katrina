@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Hide Elements</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display" rel="stylesheet">
+    <style type="text/css">
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+        }
+
+        body {
+            font: 100% 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font: 4em 'Playfair Display', serif;
+        }
+
+        aside,
+        article {
+            width: 50%;
+            float: left;
+            padding: 3em;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h1>What Can JavaScript Do?</h1>
+        <p>JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Display None</button>
+        <button type="button" onclick="document.getElementById('demo').style.visibility='hidden'">Visibility Hidden</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Display Block</button>
+    </aside>
+    <article>
+        <h1 id="demo">Wow!</h1>
+        <p>Compare display none with visibility hidden</p>
+    </article>
+</body></html>
